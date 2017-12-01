@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "babel-node": "babel-node --presets env --inspect",
-    "start": "nodemon --exec npm run babel-node -- ./src/app.js 8081"
+    "babel-node": "babel-node --presets env",
+    "start": "nodemon --exec npm run babel-node"
   },
   "keywords": [],
   "author": "",
