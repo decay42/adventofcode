@@ -4,9 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "babel-node": "babel-node --presets env",
-    "dev": "nodemon --exec npm run babel-node",
-    "start": "npm run babel-node"
+    "dev": "nodemon --exec npm run start",
+    "start": "babel-node --presets env"
   },
   "keywords": [],
   "author": "",
@@ -22,7 +21,5 @@
     "eslint-plugin-standard": "^3.0.1",
     "nodemon": "^1.12.1"
   },
-  "dependencies": {
-    "request": "^2.83.0"
-  }
+  "dependencies": {}
 }
