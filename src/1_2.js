@@ -1,7 +1,7 @@
 import fs from 'fs'
 import path from 'path'
 
-const input = fs.readFileSync(path.resolve(__dirname, '1_1.txt'), 'utf8').trim()
+const input = fs.readFileSync(path.resolve(__dirname, '1.txt'), 'utf8').trim()
 
 let sum = 0
 

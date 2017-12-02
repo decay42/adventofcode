@@ -1,7 +1,7 @@
 import fs from 'fs'
 import path from 'path'
 
-const spreadsheet = fs.readFileSync(path.resolve(__dirname, '2_1.txt'), 'utf8').trim().split('\n')
+const spreadsheet = fs.readFileSync(path.resolve(__dirname, '2.txt'), 'utf8').trim().split('\n')
 
 let result = 0
 
@@ -19,4 +19,5 @@ for (let i = 0, l = spreadsheet.length; i < l; i++) {
     }
   }
 }
+
 console.log(`Answer for Day 2, Puzzle 2:\n${result}`)
