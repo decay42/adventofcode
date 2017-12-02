@@ -1,4 +1,5 @@
 # Advent of Code solutions in Javascript
+These are my solutions to http://adventofcode.com/2017
 
 ## Usage
 Clone the repo and run `npm install`
