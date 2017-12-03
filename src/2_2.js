@@ -5,11 +5,11 @@ const spreadsheet = fs.readFileSync(path.resolve(__dirname, '2.txt'), 'utf8').tr
 
 let result = 0
 
-for (let i = 0, l = spreadsheet.length; i < l; i++) {
-  let row = spreadsheet[i]
+for (let row of spreadsheet) {
+  row = row
     .split('\t')
     .map(e => Number(e))
-    .sort((a, b) => b - a)
+    .sort((a, b) => a - b)
 
   for (let j = 0, l = row.length; j < l; j++) {
     for (let k = j + 1; k < l; k++) {
