@@ -1,10 +1,10 @@
-import Day3 from './Day3'
+import Day4 from './Day4'
 import Combinatorics from 'js-combinatorics'
 
-const day3 = new Day3()
+const day4 = new Day4()
 let countValid = 0
 
-for (const line of day3.input) {
+for (const line of day4.input) {
   let seen = []
   let valid = true
 
