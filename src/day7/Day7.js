@@ -6,7 +6,6 @@ export default class extends Input {
 
     this.input = this.input
       .map(row => this.parseRow(row))
-      .sort((a, b) => a.weight - b.weight)
   }
 
   parseRow (row) {
@@ -15,5 +14,13 @@ export default class extends Input {
       name,
       weight: +weight,
       children: children ? children.split(/, /) : undefined}
+  }
+
+  get leafs () {
+    return this.input.filter(e => e.children === undefined)
+  }
+
+  findParent (child) {
+    return this.input.filter(e => e.children ? e.children.indexOf(child) !== -1 : false)
   }
 }
